@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KarsilastirmaOperatorleri",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Donguler", "Donguler\Donguler.csproj", "{0AEFD8B5-E2E0-45E0-B93D-C31BF5A447F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diziler", "Diziler\Diziler.csproj", "{FE5A0E4E-F1DB-4D4B-A038-1498F66AA94C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{0AEFD8B5-E2E0-45E0-B93D-C31BF5A447F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AEFD8B5-E2E0-45E0-B93D-C31BF5A447F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AEFD8B5-E2E0-45E0-B93D-C31BF5A447F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE5A0E4E-F1DB-4D4B-A038-1498F66AA94C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE5A0E4E-F1DB-4D4B-A038-1498F66AA94C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE5A0E4E-F1DB-4D4B-A038-1498F66AA94C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE5A0E4E-F1DB-4D4B-A038-1498F66AA94C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
