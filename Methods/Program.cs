@@ -15,12 +15,40 @@ namespace Methods
             //DateTimeMethods();
             //IlkMetodum();
             //MyMethodsExample();
+            //myMethodsExample2();
 
-            int cevap =KareninAlanınıHesaplama();
-            Console.WriteLine("Karenin alanı:{0}",cevap);
+            Console.WriteLine("Kısa kenarı giriniz:");
+            int kisaKenar = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Uzun kenarı giriniz:");
+            int uzunKenar = Convert.ToInt32(Console.ReadLine());
+
+            CevreHesapla(kisaKenar,uzunKenar);
+            int alan=AlanHesapla(kisaKenar, uzunKenar);
+            Console.WriteLine("Alan:{0}",alan);
+
 
             Console.ReadLine();
         }
+
+        static void CevreHesapla(int sayi1, int sayi2)
+        {
+            int cevre = 2 * (sayi1+sayi2);
+            Console.WriteLine("Çevresi:{0}",cevre);
+
+
+        }
+        static int AlanHesapla(int sayi1,int sayi2)
+        {
+            int alan = sayi1 * sayi2;
+            return alan;
+        }
+
+        private static void myMethodsExample2()
+        {
+            int cevap = KareninAlanınıHesaplama();
+            Console.WriteLine("Karenin alanı:{0}", cevap);
+        }
+
         static int KareninAlanınıHesaplama()
         {
             Console.WriteLine("Hesaplamak istediğiniz karenin uzunluğunu giriniz");
