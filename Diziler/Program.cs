@@ -10,8 +10,84 @@ namespace Diziler
     {
         static void Main(string[] args)
         {
-            string[] isimler;
-            isimler = new string[4];
+            //ArraysIntro();
+
+
+            int[] sinavlar = new int[5];
+            Console.WriteLine("Lütfen 5 adet sınav notunuzu giriniz");
+            for (int i = 0; i < 5; i++)
+            {
+                sinavlar[i]=Convert.ToInt32(Console.ReadLine());
+            }
+
+            Console.Clear();
+
+            Console.WriteLine("Değiştirmek istediğiniz not varsa 1'e basınız\nSilmek istediğiniz not varsa 2'ye basınız\nNotlarınızı yüksekten düşüğe sıralamak için 3'e basınız");
+           int secim= int.Parse(Console.ReadLine());
+            switch (secim)
+            {
+                case 1:
+                    Console.WriteLine("Hangi notunuzu güncellemek istiyorsunuz?");
+                    int not = int.Parse(Console.ReadLine());
+                    int notunIndexi= Array.IndexOf(sinavlar, not);
+                    if (notunIndexi!=-1)
+                    {
+                        Console.WriteLine("Güncel notunuzu yazınız");
+                        int yeniNot = int.Parse(Console.ReadLine());
+                        sinavlar[notunIndexi] = yeniNot;
+                        Console.WriteLine("Notunuz güncellendi.");
+                        foreach (var item in sinavlar)
+                        {
+                            Console.WriteLine(item);
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Böyle bir not girilmedi");
+                    }
+                    break;
+
+                case 2:
+                    Console.WriteLine("Hangi notunuzu silmek istiyorsunuz?");
+                    int silinecekNot = int.Parse(Console.ReadLine());
+                    int silinecekNotunIndexi = Array.IndexOf(sinavlar, silinecekNot);
+                    if (silinecekNotunIndexi != -1)
+                    {
+                        Array.Clear(sinavlar, silinecekNotunIndexi, 1);
+                        Console.WriteLine("Notunuz Silindi");
+                        foreach (var item in sinavlar)
+                        {
+                            Console.WriteLine(item);
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Böyle bir not girilmedi");
+                    }
+                    break;
+
+                case 3:
+                    Array.Sort(sinavlar);
+                    Array.Reverse(sinavlar);
+                    foreach (var item in sinavlar)
+                    {
+                        Console.WriteLine(item);
+                    }
+                  
+                    break;
+
+
+                default:
+                    Console.WriteLine("Yanlış seçim yaptınız");
+                    break;
+            }
+
+            Console.ReadLine();
+        }
+
+        private static void ArraysIntro()
+        {
+            string[] isimler = new string[4];
             isimler[0] = "Ali";
             isimler[1] = "Mehmet";
             isimler[2] = "Ahmet";
@@ -51,8 +127,6 @@ namespace Diziler
             //varsa indeks verir yoksa -1 verir sondakini verir her zaman
             int sonSira = Array.LastIndexOf(rakamlar, 0);
             Console.WriteLine(sonSira);
-
-            Console.ReadLine();
         }
     }
 }
