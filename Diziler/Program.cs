@@ -11,26 +11,39 @@ namespace Diziler
         static void Main(string[] args)
         {
             //ArraysIntro();
+            //Example();
 
+            //çok boyutlu dize oluşturmak için
 
+            string[,] sehirler = new string[4, 2] { {"İstanbul","Türkiye" }, { "Nice", "Fransa" }, { "Milano", "İtalya" }, { "Prag", "Çekya" }};
+            foreach (var item in sehirler)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.ReadLine();
+        }
+
+        private static void Example()
+        {
             int[] sinavlar = new int[5];
             Console.WriteLine("Lütfen 5 adet sınav notunuzu giriniz");
             for (int i = 0; i < 5; i++)
             {
-                sinavlar[i]=Convert.ToInt32(Console.ReadLine());
+                sinavlar[i] = Convert.ToInt32(Console.ReadLine());
             }
 
             Console.Clear();
 
             Console.WriteLine("Değiştirmek istediğiniz not varsa 1'e basınız\nSilmek istediğiniz not varsa 2'ye basınız\nNotlarınızı yüksekten düşüğe sıralamak için 3'e basınız");
-           int secim= int.Parse(Console.ReadLine());
+            int secim = int.Parse(Console.ReadLine());
             switch (secim)
             {
                 case 1:
                     Console.WriteLine("Hangi notunuzu güncellemek istiyorsunuz?");
                     int not = int.Parse(Console.ReadLine());
-                    int notunIndexi= Array.IndexOf(sinavlar, not);
-                    if (notunIndexi!=-1)
+                    int notunIndexi = Array.IndexOf(sinavlar, not);
+                    if (notunIndexi != -1)
                     {
                         Console.WriteLine("Güncel notunuzu yazınız");
                         int yeniNot = int.Parse(Console.ReadLine());
@@ -73,7 +86,7 @@ namespace Diziler
                     {
                         Console.WriteLine(item);
                     }
-                  
+
                     break;
 
 
@@ -81,8 +94,6 @@ namespace Diziler
                     Console.WriteLine("Yanlış seçim yaptınız");
                     break;
             }
-
-            Console.ReadLine();
         }
 
         private static void ArraysIntro()
