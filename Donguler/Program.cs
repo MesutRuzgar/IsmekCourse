@@ -10,6 +10,39 @@ namespace Donguler
     {
         static void Main(string[] args)
         {
+            //ForLoopIntro();
+            //WhileLoopIntro();
+
+            Console.WriteLine("Bir sayı giriniz");
+            int sayi = Convert.ToInt32(Console.ReadLine());
+            int fac = 1;
+
+            while (sayi>1)
+            {
+                fac = sayi * fac;
+                sayi--;
+            }
+            Console.WriteLine("Faktoriyel:{0}",fac);
+
+
+            Console.ReadLine();
+        }
+
+        private static void WhileLoopIntro()
+        {
+            Console.WriteLine("Bir sayı giriniz");
+            int sayi = Convert.ToInt32(Console.ReadLine());
+
+            while (sayi != 0)
+            {
+                Console.WriteLine("Lütfen yeni bir sayı giriniz");
+                sayi = Convert.ToInt32(Console.ReadLine());
+            }
+            Console.WriteLine("0 girildiği için döngü bitirildi.");
+        }
+
+        private static void ForLoopIntro()
+        {
             Console.WriteLine("Başlangıç Sayısını giriniz");
             int baslangic = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Bitiş Sayısını giriniz");
@@ -39,9 +72,6 @@ namespace Donguler
             {
                 Console.WriteLine("Başlangıç ve bitiş noktası eşit");
             }
-
-
-            Console.ReadLine();
         }
     }
 }
