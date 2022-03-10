@@ -20,6 +20,35 @@ namespace KarsilastirmaOperatorleri
             //IfElseIntro();
             //IfElseExample();
             //SwitchCaseIntro();
+            //SwitchCaseExample();
+
+            int kenar1, kenar2, kenar3;
+            Console.WriteLine("1.kenarı giriniz");
+            kenar1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("2.kenarı giriniz");
+            kenar2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("3.kenarı giriniz");
+            kenar3 = Convert.ToInt32(Console.ReadLine());
+
+            if (kenar1 == kenar2 && kenar2 == kenar3)
+            {
+                Console.WriteLine("Bu bir eşkenar üçgendir");
+            }
+            else if (kenar1==kenar2 || kenar2==kenar3 || kenar1==kenar3)
+            {
+                Console.WriteLine("Bu bir ikizkenar üçgendir.");
+            }
+            else
+            {
+                Console.WriteLine("Bu bir çeşitkenar üçgendir");
+            }
+
+
+            Console.ReadLine();
+        }
+
+        private static void SwitchCaseExample()
+        {
             Console.WriteLine("Ehliyet belgenizdeki sınıfı giriniz.");
             string sinif = Console.ReadLine();
             //tek karakterde char kullanabilir aşağıda ise '..' içine yazılır
@@ -53,9 +82,6 @@ namespace KarsilastirmaOperatorleri
                     Console.WriteLine("Yanlış veya hatalı sınıf girdiniz.");
                     break;
             }
-
-
-            Console.ReadLine();
         }
 
         private static void SwitchCaseIntro()
