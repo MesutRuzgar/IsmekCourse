@@ -22,7 +22,38 @@ namespace KarsilastirmaOperatorleri
             //SwitchCaseIntro();
             //SwitchCaseExample();
             //MantiksalOperatorExample();
+            //MatiksalOperatorExample2();,
+            
+            Console.WriteLine("Lütfen kilonuzu giriniz");
+            double kg = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Lütfen boyunuzu m cinsinden giriniz. (Örn:1,65)");
+            double boy = Convert.ToDouble(Console.ReadLine());
+            double kitleİndeks = kg / (boy*boy);
 
+            Console.WriteLine("Kitle endeksiniz={0}",kitleİndeks);
+            if (kitleİndeks<18.5)
+            {
+                Console.WriteLine("İdeal kilonuzun altındasınız.");
+            }
+            else if (kitleİndeks<25)
+            {
+                Console.WriteLine("İdeal kilodasınız");
+            }
+            else if (kitleİndeks<30)
+            {
+                Console.WriteLine("İdeal kilonuzun üzerindesiniz");
+            }
+            else
+            {
+                Console.WriteLine("İdeal kilonuzun çok üzerindesiniz.");
+            }
+           
+
+            Console.ReadLine();
+        }
+
+        private static void MatiksalOperatorExample2()
+        {
             int sayi1, sayi2, sayi3;
             Console.WriteLine("1. sayıyı giriniz");
             sayi1 = Convert.ToInt32(Console.ReadLine());
@@ -31,15 +62,15 @@ namespace KarsilastirmaOperatorleri
             Console.WriteLine("3. sayıyı giriniz");
             sayi3 = Convert.ToInt32(Console.ReadLine());
 
-            if (sayi1<sayi3 && sayi1>sayi2 || sayi1<sayi2 && sayi1>sayi3)
+            if (sayi1 < sayi3 && sayi1 > sayi2 || sayi1 < sayi2 && sayi1 > sayi3)
             {
-                Console.WriteLine("Ortanca sayı ={0}",sayi1);
+                Console.WriteLine("Ortanca sayı ={0}", sayi1);
             }
-            else if (sayi2<sayi3 && sayi2>sayi1 || sayi2<sayi1 && sayi2>sayi3)
+            else if (sayi2 < sayi3 && sayi2 > sayi1 || sayi2 < sayi1 && sayi2 > sayi3)
             {
                 Console.WriteLine("Ortanca sayı ={0}", sayi2);
             }
-            else if (sayi3<sayi2 && sayi3>sayi1 || sayi3<sayi1 && sayi3>sayi2)
+            else if (sayi3 < sayi2 && sayi3 > sayi1 || sayi3 < sayi1 && sayi3 > sayi2)
             {
                 Console.WriteLine("Ortanca sayı ={0}", sayi3);
             }
@@ -47,7 +78,6 @@ namespace KarsilastirmaOperatorleri
             {
                 Console.WriteLine("Sayılar arasında eşitlik söz konusu,ortanca bulunamadı!");
             }
-            Console.ReadLine();
         }
 
         private static void MantiksalOperatorExample()
