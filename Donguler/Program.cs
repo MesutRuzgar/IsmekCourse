@@ -13,15 +13,38 @@ namespace Donguler
             //ForLoopIntro();
             //WhileLoopIntro();
             //FaktoriyelExample();
+            //DoWhileExample();
 
+            int sayi = new Random().Next(0, 100);
+            int tahmin=0;
+            do
+            {
+                Console.WriteLine(sayi);
+                Console.WriteLine("Tuttuğum sayıyı tahimin ediniz");
+                tahmin = Convert.ToInt32(Console.ReadLine());
+                if (tahmin>sayi)
+                {
+                    Console.WriteLine("Aşağıya in");
+                }
+                else if (tahmin<sayi)
+                {
+                    Console.WriteLine("Yukarı çık");
+                }
+
+            } while (tahmin!=sayi);
+
+
+            Console.ReadLine();
+        }
+
+        private static void DoWhileExample()
+        {
             int sayi;
             do
             {
-                sayi= new Random().Next(0, 10);
+                sayi = new Random().Next(0, 10);
                 Console.WriteLine(sayi);
-            } while (sayi!=5);
-
-            Console.ReadLine();
+            } while (sayi != 5);
         }
 
         private static void FaktoriyelExample()
