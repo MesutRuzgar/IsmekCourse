@@ -13,11 +13,42 @@ namespace Methods
             //MathMethods();
             //StringMethods();
             //DateTimeMethods();
+            //IlkMetodum();
 
-            IlkMetodum();
+            Console.WriteLine("Tarih bilgisini görmek için 1'e,\nSaat bilgisini görmek için 2'ye basınız");
+            int secim = int.Parse(Console.ReadLine());
+            
+            switch (secim)
+            {
+                case 1:
+                    TarihGoster();
+                    break;
+                case 2:
+                    SaatGoster();
+                    break;
+                default:
+                    Uyari();
+                    break;
+            }
 
             Console.ReadLine();
         }
+        static void TarihGoster()
+        {
+            Console.WriteLine(Convert.ToString(DateTime.Now.Date));
+        }
+        static void SaatGoster()
+        {
+            Console.WriteLine(DateTime.Now.TimeOfDay);
+        }
+        static void Uyari()
+        {
+            Console.WriteLine("Geçerli seçim yapılmadı!");
+        }
+
+
+
+
         //main method static olduğundan içinde kullanılan methodlarda static olmak zorundadır
         static void IlkMetodum()
         {
