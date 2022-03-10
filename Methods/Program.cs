@@ -11,7 +11,44 @@ namespace Methods
         static void Main(string[] args)
         {
             //MathMethods();
+            //StringMethods();
 
+            DateTime tarih = new DateTime(2010, 10, 24, 12, 00, 10);
+            Console.WriteLine("Kendi oluşturduğum tarih:{0}",tarih);
+
+            DateTime suan=DateTime.Now;
+            Console.WriteLine("şuan:{0}",suan);
+            int yıl = DateTime.Now.Year;
+            Console.WriteLine("suanki yıl:{0}",yıl);
+            int ay = DateTime.Now.Month;
+            Console.WriteLine("suanki ay:{0}", ay);
+            int ayınKacı = DateTime.Now.Year;
+            Console.WriteLine("suanki ayın kacı:{0}", ayınKacı);
+            DayOfWeek haftaninGunu = DateTime.Now.DayOfWeek;
+            Console.WriteLine("suanki haftanın günü:{0}", haftaninGunu);
+            int yilinKacıncıGunu = DateTime.Now.DayOfYear;
+            Console.WriteLine("suanki yılın kacıncı günü:{0}", yilinKacıncıGunu);
+            int saat = DateTime.Now.Hour;
+            Console.WriteLine("suanki saat:{0}", saat);
+            int dakika = DateTime.Now.Minute;
+            Console.WriteLine("suanki dakika:{0}", dakika);
+            DateTime bugün = DateTime.Today;
+            Console.WriteLine("bugün:{0}", bugün);
+
+            DateTime ucGunSonrası=tarih.AddDays(3);
+            Console.WriteLine("enbaskataki tarihe 3 gün ekledik:{0}",ucGunSonrası);
+
+            //iki tarihi çıkartır
+            Console.WriteLine( "iki tarih çıkartma:{0}", tarih.Subtract(DateTime.Now));
+
+            Console.WriteLine(DateTime.Now.ToString("dd MMM yyyy HH:mm:ss"));
+
+
+            Console.ReadLine();
+        }
+
+        private static void StringMethods()
+        {
             string metin = "Korkma, sönmez bu şafaklarda yüzen al sancak";
             int karakterSayisi = metin.Length;
             string kopyaMetin = string.Copy(metin);
@@ -35,7 +72,7 @@ namespace Methods
             metin = metin.Remove(metin.Length - 2);
 
             //boşluk olan yeri _ yapıyoruz
-            metin=metin.Replace(" ", "_");
+            metin = metin.Replace(" ", "_");
 
             //metni kelimelere parçalama
             string[] kelimeler = metin.Split('_');
@@ -57,10 +94,10 @@ namespace Methods
 
             //split herhangi bir özel karaktere göre sürekli böler
             //substring ise isteğimiz index arasındaki bilgileri kesip alır
-            string parcalananMetin=metin.Substring(20, 10);
-            Console.WriteLine("substring ile Parçalanan metin:{0}",parcalananMetin);
+            string parcalananMetin = metin.Substring(20, 10);
+            Console.WriteLine("substring ile Parçalanan metin:{0}", parcalananMetin);
 
-            Console.WriteLine("Metnin karakter sayısı:{0}",karakterSayisi);
+            Console.WriteLine("Metnin karakter sayısı:{0}", karakterSayisi);
             Console.WriteLine("kopya metin:{0}", kopyaMetin);
             Console.WriteLine("korkma kelime varmi:{0}", kelimeVarMi);
             Console.WriteLine("; ile biter mi:{0}", nvileBiterMi);
@@ -68,8 +105,6 @@ namespace Methods
             Console.WriteLine("S nin indeksi:{0}", sIndex);
             Console.WriteLine("büyük harfli metin:{0}", buyukHarfliMetin);
             Console.WriteLine("küçük harfli metin:{0}", kucukHarfliMetin);
-
-            Console.ReadLine();
         }
 
         private static void MathMethods()
