@@ -17,14 +17,43 @@ namespace KarsilastirmaOperatorleri
         //!= eşit değildir
         static void Main(string[] args)
         {
+            //IfElseIntro();
+
+            Console.WriteLine("Vize notunuzu giriniz.");
+            int vize = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Final notunuzu giriniz.");
+            int final = Convert.ToInt32(Console.ReadLine());
+
+            double basariNotu = vize * 0.4 + final * 0.6;
+            Console.WriteLine(basariNotu);
+
+            if (basariNotu>=60)
+            {
+                Console.WriteLine("Geçti");
+            }
+            else if (basariNotu>=50)
+            {
+                Console.WriteLine("Şartlı geçti.");
+
+            }
+            else
+            {
+                Console.WriteLine("Kaldı.");
+            }
+
+            Console.ReadLine();
+        }
+
+        private static void IfElseIntro()
+        {
             Console.WriteLine("Bir sayı giriniz.");
             int sayi1 = Convert.ToInt32(Console.ReadLine());
 
-            if (sayi1>0)
+            if (sayi1 > 0)
             {
-                Console.WriteLine("{0} Sayısı pozitiftir.",sayi1);
+                Console.WriteLine("{0} Sayısı pozitiftir.", sayi1);
             }
-            else if (sayi1<0)
+            else if (sayi1 < 0)
             {
                 Console.WriteLine("{0} Sayısı  negatiftir.", sayi1);
             }
@@ -32,7 +61,6 @@ namespace KarsilastirmaOperatorleri
             {
                 Console.WriteLine("0 sayısı girildi.");
             }
-            Console.ReadLine();
         }
     }
 }
