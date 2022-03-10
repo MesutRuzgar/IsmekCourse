@@ -20,6 +20,40 @@ namespace KarsilastirmaOperatorleri
             //IfElseIntro();
             //IfElseExample();
             //SwitchCaseIntro();
+            Console.WriteLine("Ehliyet belgenizdeki sınıfı giriniz.");
+            string sinif = Console.ReadLine();
+            //tek karakterde char kullanabilir aşağıda ise '..' içine yazılır
+            //char sinif = Convert.ToChar(Console.ReadLine());
+
+            switch (sinif)
+            {
+                case "a":
+                    Console.WriteLine("Tüm motorlar");
+                    break;
+                case "b":
+                    Console.WriteLine("Otomobil, kamyonet kullanabilir");
+                    break;
+                case "c":
+                    Console.WriteLine("Kamyon, çekici kullanabilir");
+                    break;
+                case "d":
+                    Console.WriteLine("Minibüs, otobüs kullanabilir");
+                    break;
+                case "f":
+                    Console.WriteLine("Traktör kullanabilir");
+                    break;
+                case "g":
+                    Console.WriteLine("İş makinesi kullanabilir");
+                    break;
+                case "m":
+                    Console.WriteLine("Motorlu bisiklet kullanabilir");
+                    break;
+
+                default:
+                    Console.WriteLine("Yanlış veya hatalı sınıf girdiniz.");
+                    break;
+            }
+
 
             Console.ReadLine();
         }
