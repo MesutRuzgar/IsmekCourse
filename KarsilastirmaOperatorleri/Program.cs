@@ -21,7 +21,37 @@ namespace KarsilastirmaOperatorleri
             //IfElseExample();
             //SwitchCaseIntro();
             //SwitchCaseExample();
+            //MantiksalOperatorExample();
 
+            int sayi1, sayi2, sayi3;
+            Console.WriteLine("1. sayıyı giriniz");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("2. sayıyı giriniz");
+            sayi2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("3. sayıyı giriniz");
+            sayi3 = Convert.ToInt32(Console.ReadLine());
+
+            if (sayi1<sayi3 && sayi1>sayi2 || sayi1<sayi2 && sayi1>sayi3)
+            {
+                Console.WriteLine("Ortanca sayı ={0}",sayi1);
+            }
+            else if (sayi2<sayi3 && sayi2>sayi1 || sayi2<sayi1 && sayi2>sayi3)
+            {
+                Console.WriteLine("Ortanca sayı ={0}", sayi2);
+            }
+            else if (sayi3<sayi2 && sayi3>sayi1 || sayi3<sayi1 && sayi3>sayi2)
+            {
+                Console.WriteLine("Ortanca sayı ={0}", sayi3);
+            }
+            else
+            {
+                Console.WriteLine("Sayılar arasında eşitlik söz konusu,ortanca bulunamadı!");
+            }
+            Console.ReadLine();
+        }
+
+        private static void MantiksalOperatorExample()
+        {
             int kenar1, kenar2, kenar3;
             Console.WriteLine("1.kenarı giriniz");
             kenar1 = Convert.ToInt32(Console.ReadLine());
@@ -34,7 +64,7 @@ namespace KarsilastirmaOperatorleri
             {
                 Console.WriteLine("Bu bir eşkenar üçgendir");
             }
-            else if (kenar1==kenar2 || kenar2==kenar3 || kenar1==kenar3)
+            else if (kenar1 == kenar2 || kenar2 == kenar3 || kenar1 == kenar3)
             {
                 Console.WriteLine("Bu bir ikizkenar üçgendir.");
             }
@@ -42,9 +72,6 @@ namespace KarsilastirmaOperatorleri
             {
                 Console.WriteLine("Bu bir çeşitkenar üçgendir");
             }
-
-
-            Console.ReadLine();
         }
 
         private static void SwitchCaseExample()
