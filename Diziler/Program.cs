@@ -13,15 +13,20 @@ namespace Diziler
             //ArraysIntro();
             //Example();
 
+            //CokBoyutluDize();
+
+            Console.ReadLine();
+        }
+
+        private static void CokBoyutluDize()
+        {
             //çok boyutlu dize oluşturmak için
 
-            string[,] sehirler = new string[4, 2] { {"İstanbul","Türkiye" }, { "Nice", "Fransa" }, { "Milano", "İtalya" }, { "Prag", "Çekya" }};
+            string[,] sehirler = new string[4, 2] { { "İstanbul", "Türkiye" }, { "Nice", "Fransa" }, { "Milano", "İtalya" }, { "Prag", "Çekya" } };
             foreach (var item in sehirler)
             {
                 Console.WriteLine(item);
             }
-
-            Console.ReadLine();
         }
 
         private static void Example()
