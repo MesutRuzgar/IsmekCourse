@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursiveMethods", "Recursi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodsExamples", "MethodsExamples\MethodsExamples.csproj", "{CEA80ED8-AFE2-42C0-96A4-305F9CE48751}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimdiSiraSizde4", "SimdiSiraSizde4\SimdiSiraSizde4.csproj", "{7F0A7ECA-D940-416B-BEB8-AC3FD59584AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{CEA80ED8-AFE2-42C0-96A4-305F9CE48751}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEA80ED8-AFE2-42C0-96A4-305F9CE48751}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEA80ED8-AFE2-42C0-96A4-305F9CE48751}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F0A7ECA-D940-416B-BEB8-AC3FD59584AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F0A7ECA-D940-416B-BEB8-AC3FD59584AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F0A7ECA-D940-416B-BEB8-AC3FD59584AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F0A7ECA-D940-416B-BEB8-AC3FD59584AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
