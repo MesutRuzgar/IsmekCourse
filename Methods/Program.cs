@@ -12,14 +12,27 @@ namespace Methods
         {
             //MathMethods();
             //StringMethods();
+            //DateTimeMethods();
 
+            IlkMetodum();
+
+            Console.ReadLine();
+        }
+        //main method static olduğundan içinde kullanılan methodlarda static olmak zorundadır
+        static void IlkMetodum()
+        {
+            Console.WriteLine("Bu bilgi bir metod çalıştırılması ile yazılmıştır.");
+        }
+
+        private static void DateTimeMethods()
+        {
             DateTime tarih = new DateTime(2010, 10, 24, 12, 00, 10);
-            Console.WriteLine("Kendi oluşturduğum tarih:{0}",tarih);
+            Console.WriteLine("Kendi oluşturduğum tarih:{0}", tarih);
 
-            DateTime suan=DateTime.Now;
-            Console.WriteLine("şuan:{0}",suan);
+            DateTime suan = DateTime.Now;
+            Console.WriteLine("şuan:{0}", suan);
             int yıl = DateTime.Now.Year;
-            Console.WriteLine("suanki yıl:{0}",yıl);
+            Console.WriteLine("suanki yıl:{0}", yıl);
             int ay = DateTime.Now.Month;
             Console.WriteLine("suanki ay:{0}", ay);
             int ayınKacı = DateTime.Now.Year;
@@ -35,16 +48,13 @@ namespace Methods
             DateTime bugün = DateTime.Today;
             Console.WriteLine("bugün:{0}", bugün);
 
-            DateTime ucGunSonrası=tarih.AddDays(3);
-            Console.WriteLine("enbaskataki tarihe 3 gün ekledik:{0}",ucGunSonrası);
+            DateTime ucGunSonrası = tarih.AddDays(3);
+            Console.WriteLine("enbaskataki tarihe 3 gün ekledik:{0}", ucGunSonrası);
 
             //iki tarihi çıkartır
-            Console.WriteLine( "iki tarih çıkartma:{0}", tarih.Subtract(DateTime.Now));
+            Console.WriteLine("iki tarih çıkartma:{0}", tarih.Subtract(DateTime.Now));
 
             Console.WriteLine(DateTime.Now.ToString("dd MMM yyyy HH:mm:ss"));
-
-
-            Console.ReadLine();
         }
 
         private static void StringMethods()
