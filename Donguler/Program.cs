@@ -12,20 +12,30 @@ namespace Donguler
         {
             //ForLoopIntro();
             //WhileLoopIntro();
+            //FaktoriyelExample();
 
+            int sayi;
+            do
+            {
+                sayi= new Random().Next(0, 10);
+                Console.WriteLine(sayi);
+            } while (sayi!=5);
+
+            Console.ReadLine();
+        }
+
+        private static void FaktoriyelExample()
+        {
             Console.WriteLine("Bir sayı giriniz");
             int sayi = Convert.ToInt32(Console.ReadLine());
             int fac = 1;
 
-            while (sayi>1)
+            while (sayi > 1)
             {
                 fac = sayi * fac;
                 sayi--;
             }
-            Console.WriteLine("Faktoriyel:{0}",fac);
-
-
-            Console.ReadLine();
+            Console.WriteLine("Faktoriyel:{0}", fac);
         }
 
         private static void WhileLoopIntro()
