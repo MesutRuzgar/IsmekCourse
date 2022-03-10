@@ -14,27 +14,53 @@ namespace Donguler
             //WhileLoopIntro();
             //FaktoriyelExample();
             //DoWhileExample();
+            //DoWhileExample2();
+           
+            char cevap;
+            do
+            {
+                Console.WriteLine("Kare Çizme Programı");
+                Console.WriteLine("Oluşturulacak karenin bir kenarının uzunluğunu giriniz");
+                int kenar = int.Parse(Console.ReadLine());
+                
+                for (int i = 0; i < kenar; i++)
+                {
+                    string metin = "";
+                    for (int j = 0; j < kenar; j++)
+                    {
+                        metin += " *";
+                    }
+                    Console.WriteLine(metin);
+                }
+                Console.WriteLine("Yeniden denemek ister misiniz? (e/h)");
+                cevap = Convert.ToChar(Console.ReadLine());
+            } while (cevap=='e');
 
+
+
+
+            Console.ReadLine();
+        }
+
+        private static void DoWhileExample2()
+        {
             int sayi = new Random().Next(0, 100);
-            int tahmin=0;
+            int tahmin = 0;
             do
             {
                 Console.WriteLine(sayi);
                 Console.WriteLine("Tuttuğum sayıyı tahimin ediniz");
                 tahmin = Convert.ToInt32(Console.ReadLine());
-                if (tahmin>sayi)
+                if (tahmin > sayi)
                 {
                     Console.WriteLine("Aşağıya in");
                 }
-                else if (tahmin<sayi)
+                else if (tahmin < sayi)
                 {
                     Console.WriteLine("Yukarı çık");
                 }
 
-            } while (tahmin!=sayi);
-
-
-            Console.ReadLine();
+            } while (tahmin != sayi);
         }
 
         private static void DoWhileExample()
