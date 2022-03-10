@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurDonusumleri", "TurDonusu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AritmatikselOperatorler", "AritmatikselOperatorler\AritmatikselOperatorler.csproj", "{D262096C-7E4B-4E2F-B696-8AA13ACD5E30}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KarsilastirmaOperatorleri", "KarsilastirmaOperatorleri\KarsilastirmaOperatorleri.csproj", "{063AB63A-3D57-44C4-BFE5-5842BE5C2520}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D262096C-7E4B-4E2F-B696-8AA13ACD5E30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D262096C-7E4B-4E2F-B696-8AA13ACD5E30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D262096C-7E4B-4E2F-B696-8AA13ACD5E30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{063AB63A-3D57-44C4-BFE5-5842BE5C2520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{063AB63A-3D57-44C4-BFE5-5842BE5C2520}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{063AB63A-3D57-44C4-BFE5-5842BE5C2520}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{063AB63A-3D57-44C4-BFE5-5842BE5C2520}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
