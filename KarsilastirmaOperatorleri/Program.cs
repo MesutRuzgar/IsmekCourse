@@ -18,7 +18,39 @@ namespace KarsilastirmaOperatorleri
         static void Main(string[] args)
         {
             //IfElseIntro();
+            //IfElseExample();
+            //SwitchCaseIntro();
 
+            Console.ReadLine();
+        }
+
+        private static void SwitchCaseIntro()
+        {
+            Console.WriteLine("Lütfen bir harf giriniz.");
+            string harf = Console.ReadLine();
+
+            switch (harf)
+            {
+                case "a":
+                    Console.WriteLine("Ahmet, Ali, Ayşe, Aslı, Aydın");
+                    break;
+                case "b":
+                    Console.WriteLine("Betül, Büşra, Barış, Berra, Burak");
+                    break;
+                case "c":
+                    Console.WriteLine("Ceyda, Ceren, Cemre, Cemal, Cem");
+                    break;
+                case "d":
+                    Console.WriteLine("Deniz, Derya, Damla, Dilek, Dinçer");
+                    break;
+                default:
+                    Console.WriteLine("Bu karakterle uyuşan isim bulunamadı");
+                    break;
+            }
+        }
+
+        private static void IfElseExample()
+        {
             Console.WriteLine("Vize notunuzu giriniz.");
             int vize = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Final notunuzu giriniz.");
@@ -27,11 +59,11 @@ namespace KarsilastirmaOperatorleri
             double basariNotu = vize * 0.4 + final * 0.6;
             Console.WriteLine(basariNotu);
 
-            if (basariNotu>=60)
+            if (basariNotu >= 60)
             {
                 Console.WriteLine("Geçti");
             }
-            else if (basariNotu>=50)
+            else if (basariNotu >= 50)
             {
                 Console.WriteLine("Şartlı geçti.");
 
@@ -40,8 +72,6 @@ namespace KarsilastirmaOperatorleri
             {
                 Console.WriteLine("Kaldı.");
             }
-
-            Console.ReadLine();
         }
 
         private static void IfElseIntro()
