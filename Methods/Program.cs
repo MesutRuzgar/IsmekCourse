@@ -14,10 +14,26 @@ namespace Methods
             //StringMethods();
             //DateTimeMethods();
             //IlkMetodum();
+            //MyMethodsExample();
 
+            int cevap =KareninAlanınıHesaplama();
+            Console.WriteLine("Karenin alanı:{0}",cevap);
+
+            Console.ReadLine();
+        }
+        static int KareninAlanınıHesaplama()
+        {
+            Console.WriteLine("Hesaplamak istediğiniz karenin uzunluğunu giriniz");
+            int kenar = Convert.ToInt32(Console.ReadLine());
+            int alan = kenar * kenar;
+            return alan;
+        }
+
+        private static void MyMethodsExample()
+        {
             Console.WriteLine("Tarih bilgisini görmek için 1'e,\nSaat bilgisini görmek için 2'ye basınız");
             int secim = int.Parse(Console.ReadLine());
-            
+
             switch (secim)
             {
                 case 1:
@@ -30,9 +46,8 @@ namespace Methods
                     Uyari();
                     break;
             }
-
-            Console.ReadLine();
         }
+
         static void TarihGoster()
         {
             Console.WriteLine(Convert.ToString(DateTime.Now.Date));
